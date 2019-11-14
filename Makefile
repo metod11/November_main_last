@@ -1,5 +1,5 @@
 TARGET = main
-SRCS = src/NiederreiterBaseTwo.cpp src/StopCondition.cpp src/bfgs.cpp src/main.cpp src/powell.cpp src/dfp.cpp src/math.cpp src/sobolseqgenerator.cpp src/global_min.cpp src/nesterov.cpp src/tinyxml2.cpp src/hessian_free.cpp
+SRCS = src/Tools/NiederreiterBaseTwo.cpp src/Tools/StopCondition.cpp src/Methods/bfgs/bfgs.cpp src/Tools/main.cpp src/Methods/powell/powell.cpp src/Methods/dfp/dfp.cpp src/Tools/math.cpp src/Tools/sobolseqgenerator.cpp src/Tools/global_min.cpp src/Methods/nesterov/nesterov.cpp src/Tools/tinyxml2.cpp src/Methods/hessian_free/hessian_free.cpp
 OBJS = $(SRCS:.cpp=.o)
 CXX ?= gcc
 CXXFLAGS ?= -pthread -Ofast -std=c++14 -Wall -Wextra -fmax-errors=2 -I"include"

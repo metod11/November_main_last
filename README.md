@@ -1,5 +1,6 @@
 # DEPRECATED
-See dmkz/minimization instead.
+See Annushka instead.
+
 
 # Глобальная минимизация многомерной функции
 
@@ -11,10 +12,21 @@ See dmkz/minimization instead.
 
 ## Алгоритмы локальной минимизации:
 1. BFGS
-2. Hessian Free
-3. Nesterov
-4. DFP
-5. Powell
+2. BFGS2
+3. Hessian Free
+4. Nesterov
+5. DFP
+6. DFP2
+7. Powell
+8. Powell2
+9. Powell21
+10. Adadelta
+11. Adagrad
+12. Adam
+13. AdaMax
+14. AMSGrad
+15. Nadam
+16. RmsProp
 
 Предусмотрено тестирование методов как отдельное, так и в сравнении друг с другом. Программа тестирования отдельно методов BFGS, Hessian Free, Nesterov, DFP и Powell расположена в директории test-methods.
 
@@ -41,7 +53,7 @@ See dmkz/minimization instead.
 Для установки GCC необходимо:
 
 1. Скачать Cygwin с официального сайта https://cygwin.com/install.html
-2. При установке обязательно выбрать следующие опции из раздела Devel:
+2. При установке обязательно выбрать следующие опции из раздела Devel(см в левый верхний угол, таблица):
     * gcc-core (в разделе Devel)
     * gcc-g++ (в разделе Devel)
     * make (в разделе Devel)
@@ -60,3 +72,6 @@ GNU Make также можно установить с официального 
 
         gcc -v
         make -v
+        
+6. В случае, если сборка проекта не состоялась - обратить внимание на наличие в операционной системе программы Octave, 
+при её наличии - удалить, переустановить GNU Make заново.
